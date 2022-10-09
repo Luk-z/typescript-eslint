@@ -29,7 +29,7 @@ Examples of code for this rule:
 
 ```ts
 // nullable numbers are considered unsafe by default
-let num: number | null = 0;
+let num: number | undefined = 0;
 if (num) {
   console.log('num is defined');
 }
@@ -67,7 +67,7 @@ const Component = () => {
 };
 
 // nullable values should be checked explicitly against null or undefined
-let num: number | null = 0;
+let num: number | undefined | null = 0;
 if (num != null) {
   console.log('num is defined');
 }
